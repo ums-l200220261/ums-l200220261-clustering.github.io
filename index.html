@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Analisis WhatsApp Group</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #444;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laporan Analisis Konten WhatsApp Group</h1>
+        <p>Nama: Ulinnuha | Nim: L200220265</p>
+    </header>
+
+    <section>
+        <h2>Pendahuluan</h2>
+        <p>Analisis ini dilakukan untuk mengelompokkan pesan dari grup WhatsApp berdasarkan isi pesan. Data terdiri dari log pesan yang diekspor dari beberapa grup WhatsApp, yang dianalisis menggunakan teknik <i>clustering</i>.</p>
+
+        <h2>Proses Analisis</h2>
+        <ol>
+            <li><b>Preprocessing:</b> Data teks diubah menjadi representasi numerik menggunakan TF-IDF.</li>
+            <li><b>Clustering:</b> Pesan dikelompokkan menjadi 3, 4, dan 5 cluster menggunakan algoritma k-Means.</li>
+        </ol>
+
+        <h2>Hasil Clustering</h2>
+
+        <h3>3 Cluster</h3>
+        <table>
+            <tr>
+                <th>Cluster</th>
+                <th>Kata Kunci</th>
+            </tr>
+            <tr>
+                <td>Cluster 0</td>
+                <td>tidak, media, disertakan</td>
+            </tr>
+            <tr>
+                <td>Cluster 1</td>
+                <td>udan, saiki, woiyoo</td>
+            </tr>
+            <tr>
+                <td>Cluster 2</td>
+                <td>list, bayar, sudah</td>
+            </tr>
+        </table>
+
+        <h3>4 Cluster</h3>
+        <table>
+            <tr>
+                <th>Cluster</th>
+                <th>Kata Kunci</th>
+            </tr>
+            <tr>
+                <td>Cluster 0</td>
+                <td>tidak, media, disertakan</td>
+            </tr>
+            <tr>
+                <td>Cluster 1</td>
+                <td>udan, saiki, woiyoo</td>
+            </tr>
+            <tr>
+                <td>Cluster 2</td>
+                <td>list, bayar, sudah</td>
+            </tr>
+            <tr>
+                <td>Cluster 3</td>
+                <td>gays, untuk, ada</td>
+            </tr>
+        </table>
+
+        <h3>5 Cluster</h3>
+        <table>
+            <tr>
+                <th>Cluster</th>
+                <th>Kata Kunci</th>
+            </tr>
+            <tr>
+                <td>Cluster 0</td>
+                <td>tidak, media, disertakan</td>
+            </tr>
+            <tr>
+                <td>Cluster 1</td>
+                <td>udan, saiki, woiyoo</td>
+            </tr>
+            <tr>
+                <td>Cluster 2</td>
+                <td>list, bayar, sudah</td>
+            </tr>
+            <tr>
+                <td>Cluster 3</td>
+                <td>gays, untuk, ada</td>
+            </tr>
+            <tr>
+                <td>Cluster 4</td>
+                <td>50k, orangnya, orang</td>
+            </tr>
+        </table>
+
+        <h3>Hasil Cluster dalam Gambar</h3>
+        <img src="gambar.png" alt="Hasil Clustering">
+
+        <h2>Kesimpulan</h2>
+        <p>Clustering berhasil mengelompokkan pesan ke dalam 3 hingga 5 cluster. Setiap cluster memiliki kata kunci yang mencerminkan tema utama dari pesan. Analisis ini dapat membantu memahami topik dominan dalam grup WhatsApp.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Laporan Analisis WhatsApp Group. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
